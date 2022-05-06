@@ -11,8 +11,9 @@ export const Main = (): JSX.Element => (
     <BrowserRouter>
         <React.Fragment>
             <Routes>
-                <Route element={<Layout />}>
+                    
                     <Route path="/" element={<Home />} />
+                    <Route element={<Layout />}>
                     <Route path="/houses" element={<List />} />
                     <Route path="/houses/:id" element={<Detail />} />
                     <Route path="/houses/add" element={<Add />} />

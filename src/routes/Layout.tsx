@@ -24,7 +24,8 @@ export const Layout = (): JSX.Element => {
                 sx={{
                     background: "white",
                     flexGrow: 1,
-                    maxWidth: "100%",
+                    maxWidth: 800,
+                    width: "100%",
                     marginX: "auto"
                 }}
                 >
