@@ -4,6 +4,7 @@
   "description": "Initial setup of the project.  Created with React Router, TypeScript, Fetch API, React-Hook-Form, MUI, Vite, React, and React Query.",
   "main": "index.tsx",
   "scripts": {
+    "server": "npx json-server --watch data/db.json --port 5000",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
