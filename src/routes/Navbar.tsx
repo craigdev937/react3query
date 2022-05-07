@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Apartment from "@mui/icons-material/Apartment";
+import { AppBar } from "@mui/material";
+import { Box } from "@mui/material";
+import { Toolbar } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Button } from "@mui/material";
+import { Apartment } from "@mui/icons-material";
 
 const StyledButton = 
 ({ to, children }: {
@@ -38,7 +38,7 @@ export const Navbar = (): JSX.Element => (
                     Mobile
                 </Typography>
                 <StyledButton to="/">Home</StyledButton>
-                <StyledButton to="/houses">Home</StyledButton>
+                <StyledButton to="/houses">Real estate</StyledButton>
                 <StyledButton to="/houses/add">Add</StyledButton>
             </Toolbar>
         </AppBar>

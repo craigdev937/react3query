@@ -1,5 +1,6 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
+import { Typography } from "@mui/material";
+
 type Props = {
     children: React.ReactNode
 };
