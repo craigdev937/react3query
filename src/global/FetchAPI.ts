@@ -10,9 +10,9 @@ class FetchClass {
         return [...data];
     };
 
-    getOne = async (id: any): Promise<IHouse> => {
+    getOne = async (id: string): Promise<IHouse> => {
         const res: Response = 
-        await fetch(`${URL}/houses/${id}`);
+        await fetch(`${URL}/${id}`);
         if (!res.ok) throw new Error(res.statusText);
         const data: IHouse = await res.json();
         return data;
