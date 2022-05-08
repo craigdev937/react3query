@@ -19,7 +19,7 @@ export const List = (): JSX.Element => {
                     isError={isError} 
                     isLoading={isLoading}
                     error={error}
-                    >{data?.map((house: IHouse) => (
+                    >{data?.map((house) => (
                         <HouseItem 
                             key={house.id} 
                             house={house} 

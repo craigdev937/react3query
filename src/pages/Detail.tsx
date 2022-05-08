@@ -15,7 +15,7 @@ export const Detail = (): JSX.Element => {
         isError: isFetchError,
         error: fetchError,
         isLoading, data,
-    } = useQuery<IHouse, Error>(["books", id], () => API.getOne(id!));
+    } = useQuery<IHouse, Error>(["books", id], () => API.getOne(id));
 
     const {
         mutateAsync,
