@@ -1,4 +1,4 @@
-import { IHouse } from "../models/Interfaces";
+import { IHouse, IAddHouseFormData } from "../models/Interfaces";
 
 const URL = "http://localhost:5000/houses";
 
@@ -18,9 +18,9 @@ class FetchClass {
         return data;
     };
 
-    add = async (payload: IHouse): Promise<IHouse> => {
+    addHouse = async (payload: IAddHouseFormData): Promise<IHouse> => {
         const res: Response = 
-        await fetch(`${URL}/houses/`, {
+        await fetch(URL, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({

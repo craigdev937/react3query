@@ -15,12 +15,12 @@ export interface IHouse extends IAddHouseFormData {
 
 export interface IProps {
     isError: boolean,
-    isLoading: boolean,
+    isLoading?: boolean,
     isSuccess?: boolean,
-    error: Error | null, 
+    error?: Error | null, 
     successMessage?: string,
     showSuccessMessage?: boolean,
-    children: React.ReactNode
+    children?: React.ReactNode
 };
 
 
