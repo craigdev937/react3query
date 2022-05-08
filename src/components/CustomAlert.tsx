@@ -2,7 +2,6 @@ import React from "react";
 import { Alert } from "@mui/material";
 
 type TAlert = "error" | "success";
-
 interface IAlert {
     severity: TAlert,
     message?: React.ReactNode

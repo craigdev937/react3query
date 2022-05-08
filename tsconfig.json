@@ -3,6 +3,7 @@
         "moduleResolution": "node",
         "strict": true,
         "jsx": "react-jsx",
+        "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
         "resolveJsonModule": true,
